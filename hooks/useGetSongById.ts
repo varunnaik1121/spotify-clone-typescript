@@ -24,7 +24,7 @@ const useGetSongById=(id?:string)=>{
             setIsLoading(false)
 
         }
-        fetchSong()
+        fetchSong();
     },[id,supabaseClient]);
 
         return useMemo(()=>({
